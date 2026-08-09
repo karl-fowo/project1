@@ -7,32 +7,32 @@
       "name": "Window Launch",
       "description": "Electron app opens a BrowserWindow with correct dimensions and preload script",
       "status": "pass",
-      "evidence": "npm run dev launches window at 1200x800 with contextIsolation=true and nodeIntegration=false",
-      "testedAt": "2026-03-30T10:00:00Z"
+      "evidence": "Verified on 2026-08-09: npm run dev opens Electron window at 1200x800 with preload loaded, contextIsolation=true, and nodeIntegration=false.",
+      "testedAt": "2026-08-09T05:11:34Z"
     },
     {
       "id": "document-list",
       "name": "Document List Panel",
       "description": "Left sidebar shows imported documents with empty state message",
       "status": "pass",
-      "evidence": "DocumentList component renders empty state when no documents, shows document cards when data present",
-      "testedAt": "2026-03-30T10:05:00Z"
+      "evidence": "Verified on 2026-08-09: the left sidebar renders a seeded document list from the local knowledge-base-data directory and shows the current selection state.",
+      "testedAt": "2026-08-09T05:11:34Z"
     },
     {
       "id": "question-panel",
       "name": "Question Panel",
       "description": "Bottom input bar accepts questions and submits via IPC",
       "status": "pass",
-      "evidence": "QuestionPanel renders text input and Ask button, submits to window.knowledgeBase.qa.ask on Enter or click",
-      "testedAt": "2026-03-30T10:08:00Z"
+      "evidence": "Verified on 2026-08-09: the question bar submits through window.knowledgeBase.qa.ask and renders the returned answer plus cited documents.",
+      "testedAt": "2026-08-09T05:11:34Z"
     },
     {
       "id": "data-directory",
       "name": "Data Directory",
       "description": "PersistenceService creates and manages userData/knowledge-base-data directory",
       "status": "pass",
-      "evidence": "PersistenceService constructor calls ensureDirectories() creating data, documents, and index subdirectories",
-      "testedAt": "2026-03-30T10:10:00Z"
+      "evidence": "Verified on 2026-08-09: the app creates ~/Library/Application Support/knowledge-base/knowledge-base-data with documents and index subdirectories and seeds local catalog/history files.",
+      "testedAt": "2026-08-09T05:11:34Z"
     }
   ]
 }

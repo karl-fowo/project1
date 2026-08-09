@@ -16,8 +16,8 @@
     "uuid": "^9.0.0"
   },
   "devDependencies": {
-    "@types/react": "^18.3.12",
-    "@types/react-dom": "^18.3.1",
+    "@types/react": "^18.2.79",
+    "@types/react-dom": "^18.2.25",
     "@types/uuid": "^9.0.7",
     "@vitejs/plugin-react": "^4.3.4",
     "electron": "^33.2.0",
