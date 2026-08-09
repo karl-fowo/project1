@@ -1,0 +1,12 @@
+{
+  "name": "project1-knowledge-base",
+  "version": "1.0.0",
+  "private": true,
+  "main": "repo-viewer/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^38.0.0"
+  }
+}
